@@ -35,6 +35,21 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, Signin::class.java)
             startActivity(intent)
         }
+
+        val aboutBtn= findViewById<Button>(R.id.about)
+        aboutBtn.setOnClickListener {
+//            intent
+            val intent = Intent(applicationContext, AboutActivity::class.java)
+            startActivity(intent)
+        }
+
+        val speakBtn= findViewById<Button>(R.id.speechtotext)
+        speakBtn.setOnClickListener {
+//            intent
+            val intent = Intent(applicationContext, SpeachToTextActivity::class.java)
+            startActivity(intent)
+        }
+
 //        find the view
         val progressBar = findViewById<ProgressBar>(R.id.progressbar)
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
@@ -43,6 +58,8 @@ class MainActivity : AppCompatActivity() {
 //        helper object instance from class ApiHelper
         val helper = ApiHelper(applicationContext)
         helper.loadProducts(url, recyclerView, progressBar)
+
+
 
     }
 

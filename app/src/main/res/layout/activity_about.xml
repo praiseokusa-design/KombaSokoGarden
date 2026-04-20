@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AboutActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="About Soko Garden"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Welcome to our eCommerce app, a simple and user-friendly platform designed to make online shopping easy and accessible for everyone. Users can quickly sign up to create an account, securely sign in, and browse a wide range of products with detailed descriptions and images. Our seamless checkout process allows customers to pay conveniently through M-Pesa"
+        android:textSize="25sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_speak"
+        android:text="speak"
+        android:backgroundTint="@color/black"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"/>
+</LinearLayout>
+
